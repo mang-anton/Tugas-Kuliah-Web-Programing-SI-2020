@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style-form.css">
+        <title>Membuat Desain Form Pendaftaran Dengan HTML dan CSS</title>
+    </head>
+    <body>
+        <div class="container">
+        <div id="header">
+            <img src="logo.png">
+            <h1>Form Pendaftaran Siswa Baru</h1>
+            <p>Silahkan Isi data Diri Anda Dengan Lengkap pada tabel di bawah ini :</p>
+        </div>
+        <div class="form.container">
+        <form action="action.php" method="post" autocomplete="on" id="form1">
+            <fieldset>
+                <legend>Informasi Primer</legend>
+                <div class="form-grup">
+                <div class="label">
+                    <label>Nama Lengkap</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="nama" placeholder="Isikan nama lengkap Anda" maxlength="30" autofocus>
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Tanggal Lahir</label>
+                    </div>
+                    <div class="input">
+                        <input type="date" name="tgl_lahir">
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="email" placeholder="email@gmail.com" autocomplete="off">
+                    </div>
+                    </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Password</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="passsword" placeholder="Kombinasikan huruf dan angka">
+                    </div>
+                    </div>
+                    <div class="form-grup">
+                        <div class="label">
+                            <label>No. Henadphone</label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="number" placeholder="+62" autocomplete="off">
+                        </div>
+                        </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Asal Kota</label>
+                    </div>
+                    <div class="input">
+                        <select name="Kota">
+                            <option value="jakarta">Jakarta</option>
+                            <option value="banten">Banten</option>
+                            <option value="jateng">Jawa Tengah</option>
+                        </select>
+                    </div>
+                    </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Jenis Kelamin</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="jeniskelamin" value="1"> Laki-laki <br>
+                        <input type="radio" name="jeniskelamin" value="2"> Perempuan
+                    </div>
+                    </div>
+                    <div class="form-grup">
+                        <div class="label">
+                            <label>Pilih Jurusan</label>
+                        </div>
+                        <div class="input">
+                            <input type="checkbox" name="ipa" value="ipa"> IPA <br>
+                            <input type="checkbox" name="ips" value="ips"> IPS <br>
+                            <input type="checkbox" name="bahasa" value="bahasa"> BAHASA <br>
+                        </div>
+                        </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informasi Sekunder</legend>
+                <div class="form-grup">
+                <div class="label">
+                    <label>Alamat</label>
+                </div>
+                <div class="input">
+                    <textarea name="alamat" placeholder="Isi alamat lengkap anda"></textarea>
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="email" placeholder="email@gmail.com" autocomplete="off">
+                    </div>
+                    </div>
+                <div class="form-grup">
+                    <div class="label">
+                        <label>Kendaraan</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="kendaraan" value="mobil"> Mobil <br>
+                        <input type="checkbox" name="kendaraan" value="motor"> Motor <br>
+                        <input type="checkbox" name="kendaraan" value="speda"> Speda <br>
+                    </div>
+                    </div>
+                <div class="form-grup">
+                        <div class="label">
+                            <label>Poto Anda</label>
+                        </div>
+                        <div class="input">
+                            <label for="file-upload" class="upload-foto">Upload Foto</label>
+                            <input id="file-upload" type="file" name="foto">
+                        </div>
+                        </div>
+            </fieldset>
+        <div class="form-grup">
+            <button type="submit">SIMPAN</button>
+        </div>
+        <div class="form-grup">
+            <hr>
+            <input type="checkbox" name="subscribe" value="1" form="form"> Kirim notifikasi melalui email <br>
+            <input type="checkbox" name="subscribe" value="2" form="form"> Kirim Notifikasi Melalui No. Henadphone        
+        </div>
+        </form>
+        </div>
+        </div>
+        <footer>
+            <p><b><i>Copright@Mamang_Anton_2020</p></b></i>
+        </footer>
+    </body>
+</html>
